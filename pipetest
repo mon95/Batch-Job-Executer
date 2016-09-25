@@ -1,0 +1,5 @@
+%BEGIN
+ls -l | wc > blah.txt
+ls | sort | grep [0-9]
+sort newhello.txt | uniq | sort | grep hell | wc -c
+%END

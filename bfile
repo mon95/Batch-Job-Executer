@@ -1,0 +1,19 @@
+cat blah.txt
+cat hello.txt
+yet another line that should be ignored
+%BEGIN
+ls
+cat hello.txt 
+%BEGIN
+cat hello.txt > newhello.txt
+ls >> newhello.txt
+ls -l | wc -c # This is also a comment
+ls -l | wc -c >> newhello.txt
+ls -l | grep hell # This should go to OUTPUT.txt
+%END
+wc hello.txt    # This does not execute
+wc -c hello.txt # This does not execute
+%BEGIN  
+cat newhello.txt # This executes correctly
+%END
+# This is a test comment
