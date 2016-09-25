@@ -1,6 +1,3 @@
-Name    :   Sreehari S
-ID      :   2013A7P126G
-
 List of files:
 
     1. parse.h
