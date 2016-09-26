@@ -1,3 +1,5 @@
+Check SpecifiedDesign_BatchJobExecuter.png for the design specifications of the batch job executer program.
+
 List of files:
 
     1. parse.h
